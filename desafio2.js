@@ -31,7 +31,7 @@ class ProductManager{
     else{
         const codigorepetido=this.products.find(elemento=>elemento.code===code)
         if(codigorepetido){
-            console.error("EL CODIGO DEL PRODUCTO QUE DESEA AGREGAR ES REPETIDO")
+            console.error("EL CODIGO DEL PRODUCTO QUE DESEA AGREGAR SE ENCUENTRA REPETIDO")
             return
         }
         else{
@@ -56,7 +56,7 @@ class ProductManager{
             const allproducts=await this.getProducts()
             const codigorepetido=allproducts.find(elemento=>elemento.code===code)
             if(codigorepetido){
-                console.error("EL CODIGO DEL PRODUCTO QUE DESEA ACTUALIZAR ES REPETIDO")
+                console.error("EL CODIGO DEL PRODUCTO QUE DESEA ACTUALIZAR SE ENCUENTRA REPETIDO")
                 return
             }
             else{
